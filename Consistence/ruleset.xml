@@ -45,12 +45,14 @@
 			<property name="ignoreNewlines" value="true"/>
 		</properties>
 	</rule>
-	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<!-- <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/> -->
+	<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
 	<rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
-		<properties>
-			<property name="tabIndent" value="true"/>
-		</properties>
+    <properties>
+      <property name="indent" value="4"/>
+      <property name="tabIndent" value="false" />
+  </properties>
 	</rule>
 	<rule ref="PEAR.Classes.ClassDeclaration"/>
 	<rule ref="PEAR.Commenting.InlineComment"/>
@@ -78,6 +80,7 @@
 	<rule ref="PSR2.Namespaces.UseDeclaration"/>
 	<rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 	<rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+	<rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"/>
 	<rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
 	<rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/>
 	<rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
@@ -94,10 +97,11 @@
 	<rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
 		<properties>
 			<property name="caseSensitive" value="true"/>
+			<property name="psr12Compatible" value="false"/>
 		</properties>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
-	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
+	<!-- <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
 		<properties>
 			<property name="keywordsToCheck" type="array">
 				<element value="T_EXTENDS"/>
@@ -105,9 +109,9 @@
 				<element value="T_USE"/>
 			</property>
 		</properties>
-	</rule>
-	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
-	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+	</rule> -->
+	<!-- <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/> -->
+	<!-- <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/> -->
 	<rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
@@ -138,17 +142,17 @@
 	<rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
-	<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
+	<!-- <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
 		<properties>
 			<property name="allAnnotationsAreUseful" value="true"/>
 			<property name="traversableTypeHints" type="array">
 				<element value="Traversable"/>
 			</property>
 		</properties>
-	</rule>
+	</rule> -->
 	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
-	<rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
-	<rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+  <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming" />
 	<rule ref="Squiz.Arrays.ArrayBracketSpacing">
 		<exclude name="Squiz.Arrays.ArrayBracketSpacing.SpaceBeforeBracket"/><!-- does not handle nested array access across multiple lines -->
 	</rule>
