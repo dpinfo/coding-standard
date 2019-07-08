@@ -45,11 +45,12 @@
 			<property name="ignoreNewlines" value="true"/>
 		</properties>
 	</rule>
-	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
 	<rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
 		<properties>
-			<property name="tabIndent" value="true"/>
+			<property name="indent" value="4"/>
+			<property name="tabIndent" value="false"/>
 		</properties>
 	</rule>
 	<rule ref="PEAR.Classes.ClassDeclaration"/>
@@ -99,7 +100,7 @@
 		</properties>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
-	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
+	<!-- <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
 		<properties>
 			<property name="keywordsToCheck" type="array">
 				<element value="T_EXTENDS"/>
@@ -107,8 +108,8 @@
 				<element value="T_USE"/>
 			</property>
 		</properties>
-	</rule>
-	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
+	</rule> -->
+	<!-- <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/> -->
 	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
