@@ -1,9 +1,11 @@
-Consistence Coding Standard
+Dpi Coding Standard
 ===========================
 
-> **Complete standard is described in a [separate document](consistence-coding-standard.md)**.
+> **Initial library from Consistence Coding Standard
 
-This is a custom coding standard, which is used by all Consistence projects. It is also suitable to be used with any other project or as a foundation for your own standard.
+> **Complete standard is described in a [separate document](dpi-coding-standard.md)**.
+
+This is a custom coding standard, which is used by all DPI projects. It is also suitable to be used with any other project or as a foundation for your own standard.
 
 The main objectives of this standard are:
 
@@ -40,15 +42,15 @@ Recommended dependency on this package is on `MINOR` version (e.g. `~1.0.0`), wh
 Installation & usage
 --------------------
 
-Install package [`consistence/coding-standard`](https://packagist.org/packages/consistence/coding-standard) with [Composer](https://getcomposer.org/):
+Install package [`dpinfo/coding-standard`](https://packagist.org/packages/Dpi/coding-standard) with [Composer](https://getcomposer.org/):
 
 ```bash
-composer require --dev consistence/coding-standard
+composer require --dev dpinfo/coding-standard
 ```
 
 Then run `phpcs` with this standard:
 ``` bash
-vendor/bin/phpcs --standard=vendor/consistence/coding-standard/Consistence/ruleset.xml --extensions=php --encoding=utf-8 -sp src
+vendor/bin/phpcs --standard=vendor/dpinfo/coding-standard/Dpi/ruleset.xml --extensions=php --encoding=utf-8 -sp src
 ```
 
 For further usage options see the [PHP_CodeSniffer documentation](https://github.com/squizlabs/PHP_CodeSniffer/wiki).
